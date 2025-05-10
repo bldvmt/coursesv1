@@ -1,0 +1,209 @@
+/* Základní nastavení a CSS Proměnné */
+:root {
+    --primary-color: #0056b3; /* Tmavě modrá */
+    --secondary-color: #007bff; /* Světlejší modrá pro akcenty */
+    --light-bg-color: #f8f9fa; /* Světle šedé pozadí */
+    --dark-text-color: #333;
+    --light-text-color: #fff;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--dark-text-color);
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Hlavička */
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: var(--light-text-color);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero sekce */
+.hero-section {
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-section h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #004085; /* Tmavší odstín primární barvy */
+}
+
+/* Obecné styly pro obsahové sekce */
+.content-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.content-section.bg-light {
+    background-color: var(--light-bg-color);
+}
+
+/* Sekce Pro Koho */
+#target-audience-points {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#target-audience-points li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-left: 5px solid var(--secondary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Sekce Obsah Kurzu */
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    text-align: left;
+}
+
+.module-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.module-card h4 {
+    margin-top: 0;
+    color: var(--secondary-color);
+}
+
+/* CTA Sekce (Přihláška) */
+.cta-section {
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+}
+.cta-section h2 {
+    color: var(--light-text-color);
+}
+.cta-section .btn {
+    background-color: var(--light-text-color);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.cta-section .btn:hover {
+    background-color: #eee;
+}
+
+
+/* Patička */
+footer {
+    background-color: var(--dark-text-color);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responzivita */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    header nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul li {
+        margin: 5px 0;
+    }
+    .hero-section h1 {
+        font-size: 2.2em;
+    }
+    .container {
+        width: 90%;
+    }
+}

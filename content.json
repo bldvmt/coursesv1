@@ -1,0 +1,54 @@
+{
+  "siteTitle": "Můj Úžasný Kurz Programování",
+  "header": {
+    "logoText": "KurzPro",
+    "navLinks": [
+      { "text": "O kurzu", "href": "#o-kurzu" },
+      { "text": "Obsah", "href": "#obsah-kurzu" },
+      { "text": "Lektor", "href": "#lektor" },
+      { "text": "Přihláška", "href": "#prihlaska" }
+    ]
+  },
+  "hero": {
+    "title": "Staň se Mistrem Kódu!",
+    "subtitle": "Náš komplexní kurz tě provede od základů až po pokročilé techniky programování. Začni svou cestu ještě dnes.",
+    "ctaButtonText": "Zjistit Více"
+  },
+  "about": {
+    "title": "O kurzu",
+    "description": "Tento kurz je navržen tak, aby ti poskytl pevné základy v programování a připravil tě na reálné projekty. Naučíš se nejen psát kód, ale také myslet jako programátor, řešit problémy a efektivně spolupracovat."
+  },
+  "targetAudience": {
+    "title": "Pro koho je kurz určen?",
+    "points": [
+      "Úplné začátečníky bez předchozích zkušeností.",
+      "Mírně pokročilé, kteří si chtějí upevnit základy.",
+      "Zájemce o změnu kariéry směrem k IT.",
+      "Všechny, kdo se chtějí naučit programovat moderním způsobem."
+    ]
+  },
+  "courseContent": {
+    "title": "Co se v kurzu naučíš?",
+    "modules": [
+      { "name": "Modul 1: Úvod do Programování", "details": "Základní koncepty, proměnné, datové typy, operátory." },
+      { "name": "Modul 2: Řídící Struktury", "details": "Podmínky, cykly, logické operace." },
+      { "name": "Modul 3: Funkce a Moduly", "details": "Definice funkcí, import modulů, scope." },
+      { "name": "Modul 4: Objektově Orientované Programování", "details": "Třídy, objekty, dědičnost, polymorfismus." },
+      { "name": "Modul 5: Práce s Daty", "details": "Soubory, databáze, API." }
+    ]
+  },
+  "instructor": {
+    "title": "Tvůj Lektor",
+    "name": "Jan Kóder",
+    "bio": "Jan je zkušený programátor s více než 10 lety praxe ve vývoji softwaru. Jeho vášní je předávat znalosti a pomáhat ostatním objevovat svět technologií."
+  },
+  "enrollment": {
+    "title": "Přihlas se na Kurz!",
+    "price": "Cena kurzu: 9 900 Kč",
+    "ctaButtonText": "Chci se Přihlásit"
+  },
+  "footer": {
+    "copyrightText": "© 2025 Můj Úžasný Kurz. Všechna práva vyhrazena.",
+    "contactEmail": "info@mujsuperkurz.cz"
+  }
+}
